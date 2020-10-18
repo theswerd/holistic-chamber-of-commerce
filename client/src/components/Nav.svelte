@@ -32,6 +32,10 @@
 		float: left;
 	}
 
+	li :hover {
+		color: crimson;
+	}
+
 	[aria-current] {
 		position: relative;
 		display: inline-block;
