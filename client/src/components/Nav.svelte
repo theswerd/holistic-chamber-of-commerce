@@ -1,5 +1,6 @@
 <script>
 	export let segment;
+	import logo from '../../static/logo.png';
 </script>
 
 <style>
@@ -7,6 +8,11 @@
 		border-bottom: 1px solid rgba(255,62,0,0.1);
 		font-weight: 300;
 		padding: 0 1em;
+		position: sticky;
+		top: 0;
+		width: 100%;
+		z-index: 100;
+		background-color: white;
 	}
 
 	ul {
@@ -46,15 +52,24 @@
 		padding: 1em 0.5em;
 		display: block;
 	}
+
+	#logo {
+		height: 48px;
+		padding-right: 16px;
+		padding-top: 4px;
+		padding-left: 6px;
+	}
 </style>
 
 <nav>
 	<ul>
-		<li><a aria-current="{segment === undefined ? 'page' : undefined}" href=".">home</a></li>
-		<li><a aria-current="{segment === 'about' ? 'page' : undefined}" href="about">about</a></li>
+		<li><img alt="logo" src="{logo}" id="logo"></li>
+		<li><a aria-current="{segment === undefined ? 'page' : undefined}" href=".">Home</a></li>
+		<li><a aria-current="{segment === 'about' ? 'page' : undefined}" href="about">About</a></li>
 
 		<!-- for the blog link, we're using rel=prefetch so that Sapper prefetches
 		     the blog data when we hover over the link or tap it on a touchscreen -->
-		<li><a rel=prefetch aria-current="{segment === 'blog' ? 'page' : undefined}" href="blog">blog</a></li>
+		<li><a rel=prefetch aria-current="{segment === 'blog' ? 'page' : undefined}" href="blog">Blog</a></li>
+		<li><a aria-current="{segment === 'test' ? 'page' : undefined}" href="test">Test</a></li>
 	</ul>
 </nav>
