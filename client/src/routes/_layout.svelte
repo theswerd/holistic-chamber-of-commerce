@@ -13,6 +13,10 @@
 		margin: 0 auto;
 		box-sizing: border-box;
 	}
+
+	:root {
+		background-color: darkseagreen;
+	}
 </style>
 
 <Nav {segment}/>
