@@ -3,10 +3,6 @@
 </script>
 
 <style>
-	figure {
-		background-color: #393939;
-	}
-
 	h1, figure, p {
 		text-align: center;
 		margin: 0 auto;
@@ -52,5 +48,3 @@
 </figure>
 
 <p><strong>Try editing this file (src/routes/index.svelte) to test live reloading.</strong></p>
-
-<h1>POOOOGGGGGG!!!!!!!!!!</h1><h1>POOOOGGGGGG!!!!!!!!!!</h1><h1>POOOOGGGGGG!!!!!!!!!!</h1><h1>POOOOGGGGGG!!!!!!!!!!</h1><h1>POOOOGGGGGG!!!!!!!!!!</h1><h1>POOOOGGGGGG!!!!!!!!!!</h1><h1>POOOOGGGGGG!!!!!!!!!!</h1>
