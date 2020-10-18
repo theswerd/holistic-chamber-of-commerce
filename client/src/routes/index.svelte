@@ -3,6 +3,10 @@
 </script>
 
 <style>
+	figure {
+		background-color: #393939;
+	}
+
 	h1, figure, p {
 		text-align: center;
 		margin: 0 auto;
