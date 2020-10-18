@@ -16,7 +16,7 @@
 		top: 0;
 		width: 100%;
 		z-index: 100;
-		background-color: white;
+		background-color: mistyrose;
 	}
 
 	ul {
@@ -24,7 +24,6 @@
 		padding: 0;
 	}
 
-	/* clearfix */
 	ul::after {
 		content: '';
 		display: block;
