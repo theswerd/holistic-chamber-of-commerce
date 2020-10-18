@@ -1,6 +1,10 @@
 <script>
 	export let segment;
 	import logo from '../../static/logo.png';
+
+	function gotoHome() {
+		window.location.href = ".";
+	}
 </script>
 
 <style>
@@ -30,9 +34,10 @@
 	li {
 		display: block;
 		float: left;
+		transition: all 400ms;
 	}
 
-	li :hover {
+	li:hover {
 		color: crimson;
 	}
 
@@ -63,11 +68,15 @@
 		padding-top: 4px;
 		padding-left: 6px;
 	}
+
+	#logo:hover {
+		cursor: pointer;
+	}
 </style>
 
 <nav>
 	<ul>
-		<li><img alt="logo" src="{logo}" id="logo"></li>
+		<li><img alt="logo" src="{logo}" on:click="{gotoHome}" id="logo"></li>
 		<li><a aria-current="{segment === undefined ? 'page' : undefined}" href=".">Home</a></li>
 		<li><a aria-current="{segment === 'about' ? 'page' : undefined}" href="about">About</a></li>
 
