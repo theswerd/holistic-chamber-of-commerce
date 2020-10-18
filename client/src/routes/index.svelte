@@ -52,6 +52,11 @@
 		font-size: 16px;
 	}
 
+	#find-button:hover {
+		color: bisque;
+		cursor: pointer;
+	}
+
 	#anniversaty-button {
 		background-color: #cf5050;
 		border: none;
@@ -61,6 +66,11 @@
 		text-decoration: none;
 		display: inline-block;
 		font-size: 16px;
+	}
+
+	#anniversaty-button:hover {
+		color: bisque;
+		cursor: pointer;
 	}
 </style>
 
