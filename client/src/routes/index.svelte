@@ -1,9 +1,15 @@
 <script>
-	import successkid from 'images/successkid.jpg';
+	import successkid from "../../static/inovation.png";
 </script>
 
 <style>
-	h1, figure, p {
+	figure {
+		background-color: #ffffff;
+	}
+
+	h1,
+	figure,
+	p {
 		text-align: center;
 		margin: 0 auto;
 	}
@@ -34,6 +40,28 @@
 			font-size: 4em;
 		}
 	}
+
+	#find-button {
+		background-color: #4caf50;
+		border: none;
+		color: white;
+		padding: 15px 32px;
+		text-align: center;
+		text-decoration: none;
+		display: inline-block;
+		font-size: 16px;
+	}
+
+	#anniversaty-button {
+		background-color: #cf5050;
+		border: none;
+		color: white;
+		padding: 15px 32px;
+		text-align: center;
+		text-decoration: none;
+		display: inline-block;
+		font-size: 16px;
+	}
 </style>
 
 <svelte:head>
@@ -43,10 +71,16 @@
 <h1>POOOOGGGGGG!!!!!!!!!!</h1>
 
 <figure>
-	<img alt="Success Kid" src="{successkid}">
+	<img alt="Success Kid" src={successkid} />
 	<figcaption>This kid will find you</figcaption>
 </figure>
 
-<p><strong>Try editing this file (src/routes/index.svelte) to test live reloading.</strong></p>
+<p><strong>Mind - Body - Spirit - Business - Budget - Planet</strong></p>
 
-<h1>POOOOGGGGGG!!!!!!!!!!</h1><h1>POOOOGGGGGG!!!!!!!!!!</h1><h1>POOOOGGGGGG!!!!!!!!!!</h1><h1>POOOOGGGGGG!!!!!!!!!!</h1><h1>POOOOGGGGGG!!!!!!!!!!</h1><h1>POOOOGGGGGG!!!!!!!!!!</h1><h1>POOOOGGGGGG!!!!!!!!!!</h1>
+<center>
+	<button id="find-button">Find holistically-minded professionals, business
+		owners and resource providers!</button>
+	<p />
+	<button id="anniversaty-button">Our 10th Anniversary Special Event
+		<strong>*IN PERSON*</strong></button>
+</center>
